@@ -4,6 +4,15 @@ public class Main
 {
   public static void main(String[] args)
   {
+    Dog d = new Dog("poodle", "lala", "brown", 10);
+    Dog myDog = new Dog(); 
+
+
+
+
+
+
+
     // Uncomment and complete the code below to test your Plane class
     /* Delete this line to uncomment code **************************
     Scanner sc = new Scanner(System.in);
