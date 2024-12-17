@@ -7,6 +7,8 @@ public class Dog
 
 
 
+
+
   // constructors
 
   // default constructor 
@@ -18,21 +20,42 @@ public class Dog
     weight = 10;
   }
 
+  public Dog()
+  {
+    // "this" version of default constructor
+    this("weiner dog", "cat", "rainbow", 10);
+  }
+
 
   public Dog(String iBreed, String iName, String iColor, double iWeight)
   {
     breed = iBreed;
     name = iName;
     color = iColor;
-    if (iWeight < 0)
-    {
-      weight = 0;
-    }
-    else
-    {
-      weight = iWeight;
-    }
+    setWeight(iWeight); // does the same thing as the if/else 
+
+    // if (iWeight < 0)
+    // {
+    //   weight = 0;
+    // }
+    // else
+    // {
+    //   weight = iWeight;
+    // }
   }
+
+
+  public Dog(String breed, String name, String color, double weight)
+  {
+    // "this" points to itself
+    this.breed = breed; 
+    this.name = name;
+    this.color = color;
+    this.setWeight(weight);
+  }
+
+
+
 
 
 
