@@ -4,8 +4,8 @@ public class Main
 {
   public static void main(String[] args)
   {
-    Dog d = new Dog("poodle", "lala", "brown", 10);
-    Dog myDog = new Dog(); 
+  //   Dog d = new Dog("poodle", "lala", "brown", 10);
+  //   Dog myDog = new Dog(); 
 
 
 
@@ -14,7 +14,6 @@ public class Main
 
 
     // Uncomment and complete the code below to test your Plane class
-    /* Delete this line to uncomment code **************************
     Scanner sc = new Scanner(System.in);
     String input = "";
     Plane p = new Plane(1000);
@@ -27,11 +26,11 @@ public class Main
 
       if (input.equals("u"))
       {
-        // move the plane upwards
+        p.upward();
       }
       else if (input.equals("d"))
       {
-        // move the plane downwards
+        p.downward();
       }
       else if (input.equals("n"))
       {
@@ -49,6 +48,5 @@ public class Main
         System.out.println("Invalid input");
       }
     }
-    Delete this line to uncomment ************************************/
   }
 }
